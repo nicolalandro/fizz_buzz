@@ -1,6 +1,6 @@
 package Main;
 
-import Util.Counter;
+import NoUtil.OutputCreator;
 
 /**
  * Created by nick on 16/12/16.
@@ -8,10 +8,10 @@ import Util.Counter;
 public class main {
 
     public static void main (String args[]){
-        Counter c = new Counter(1);
+        OutputCreator outputCreator = new OutputCreator(1);
 
         for(int i=1;i<=100;i++){
-            System.out.println(c.next());
+            System.out.println(outputCreator.next());
         }
     }
 
