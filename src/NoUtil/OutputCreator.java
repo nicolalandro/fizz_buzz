@@ -4,25 +4,25 @@ package NoUtil;
  * Created by nick on 16/12/16.
  */
 public class OutputCreator {
-    private Counter actual;
+    private Counter current;
 
     public OutputCreator(int start) {
-        this.actual = new Counter(start);
+        this.current = new Counter(start);
 
     }
 
     public String next() {
-        String output = Integer.toString(actual.getActualValue());
+        String output = Integer.toString(current.getActualValue());
 
-        if(actual.getActualValue()%3==0){
+        if(current.getActualValue()%3==0){
             output= "fizz";
         }
 
-        else if(actual.getActualValue()%5==0){
+        else if(current.getActualValue()%5==0){
             output= "buzz";
         }
 
-        actual.increment();
+        current.increment();
 
         return output;
     }

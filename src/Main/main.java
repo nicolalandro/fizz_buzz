@@ -1,5 +1,6 @@
 package Main;
 
+import NoUtil.FizzBuzzComparer;
 import NoUtil.OutputCreator;
 
 /**
@@ -8,10 +9,10 @@ import NoUtil.OutputCreator;
 public class main {
 
     public static void main (String args[]){
-        OutputCreator outputCreator = new OutputCreator(1);
+        FizzBuzzComparer comparer = new FizzBuzzComparer();
 
         for(int i=1;i<=100;i++){
-            System.out.println(outputCreator.next());
+            System.out.println(comparer.compare(i));
         }
     }
 
