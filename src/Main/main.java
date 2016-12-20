@@ -1,6 +1,6 @@
 package Main;
 
-import NoUtil.FizzBuzzComparer;
+import NoUtil.FizzBuzz;
 
 /**
  * Created by nick on 16/12/16.
@@ -8,10 +8,10 @@ import NoUtil.FizzBuzzComparer;
 public class main {
 
     public static void main (String args[]){
-        FizzBuzzComparer comparer = new FizzBuzzComparer();
+        FizzBuzz fizzBuzz = new FizzBuzz();
 
         for(int i=1;i<=100;i++){
-            System.out.println(comparer.compare(i));
+            System.out.println(fizzBuzz.getValue(i));
         }
     }
 
