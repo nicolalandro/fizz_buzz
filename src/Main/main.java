@@ -1,7 +1,6 @@
 package Main;
 
 import NoUtil.FizzBuzzComparer;
-import NoUtil.OutputCreator;
 
 /**
  * Created by nick on 16/12/16.
