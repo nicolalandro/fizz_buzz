@@ -1,8 +1,6 @@
 package NoUtil;
 
-/**
- * Created by nick on 19/12/16.
- */
+
 public class FizzBuzz {
 
     public String getValue(int number) {
@@ -11,7 +9,7 @@ public class FizzBuzz {
         Number7 number7 = new Number7();
 
         if(number3.divide(number)){
-            return "fizz";
+            return number3.getValues(number);
         }
         else if(number5.divide(number)){
             return "buzz";
