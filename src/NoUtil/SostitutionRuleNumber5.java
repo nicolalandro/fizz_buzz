@@ -1,12 +1,12 @@
 package NoUtil;
 
 
-public class Number5 implements NumberInterface{
+public class SostitutionRuleNumber5 implements SostitutionRuleInterface {
     public boolean divide(int number) {
         return number%5==0;
     }
 
-    public String getValues() {
+    public String getValue() {
         return "buzz";
     }
 }
