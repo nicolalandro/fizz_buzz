@@ -1,7 +1,7 @@
 package NoUtil;
 
 
-public class Number3 {
+public class Number3 implements NumberInterface{
     public boolean divide(int number) {
         return number%3==0;
     }
