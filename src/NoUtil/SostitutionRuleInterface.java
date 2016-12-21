@@ -1,6 +1,6 @@
 package NoUtil;
 
 public interface SostitutionRuleInterface {
-    boolean divide(int number);
+    boolean satisfyRule(int number);
     String getValue();
 }

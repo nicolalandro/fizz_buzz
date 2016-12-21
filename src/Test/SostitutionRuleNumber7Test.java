@@ -7,11 +7,11 @@ import junit.framework.TestCase;
 public class SostitutionRuleNumber7Test extends TestCase {
     SostitutionRuleNumber7 number7 = new SostitutionRuleNumber7();
     public void test_number7_divide_7() throws Exception {
-        assertTrue(number7.divide(7));
+        assertTrue(number7.satisfyRule(7));
     }
 
     public void test_number7_not_divide_8() throws Exception {
-        assertFalse(number7.divide(8));
+        assertFalse(number7.satisfyRule(8));
     }
 
     public void test_number7_getValue_from_7_expected_bang(){
