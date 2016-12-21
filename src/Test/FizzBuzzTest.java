@@ -14,6 +14,10 @@ public class FizzBuzzTest extends TestCase {
         assertNotEquals(null, fizzBuzz);
     }
 
+    public void test_expected_0_FromInput0()throws Exception{
+        assertEquals("0", fizzBuzz.getValue(0));
+    }
+
     public void test_expected_1_FromInput1()throws Exception{
         assertEquals("1", fizzBuzz.getValue(1));
     }

@@ -8,6 +8,7 @@ public class FizzBuzz {
     public FizzBuzz(){
         this.listOfRule = new ArrayList();
 
+        this.listOfRule.add(new SostitutionRuleNumber0());
         this.listOfRule.add(new SostitutionRuleNumber3());
         this.listOfRule.add(new SostitutionRuleNumber5());
         this.listOfRule.add(new SostitutionRuleNumber7());
