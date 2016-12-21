@@ -10,6 +10,10 @@ public class Number5Test extends TestCase{
         assertTrue(number5.divide(5));
     }
 
+    public void test_number5_not_divide_6() throws Exception {
+        assertFalse(number5.divide(6));
+    }
+
     public void test_number5_getValue_from_5_expected_buzz() throws Exception {
         assertEquals("buzz" , number5.getValues());
     }
