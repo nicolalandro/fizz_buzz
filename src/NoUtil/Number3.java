@@ -6,11 +6,7 @@ public class Number3 {
         return number%3==0;
     }
 
-    public String getValues(int number) {
-        if(divide(number)){
+    public String getValues() {
             return "fizz";
-        }
-
-        return Integer.toString(number);
     }
 }

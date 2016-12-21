@@ -9,13 +9,13 @@ public class FizzBuzz {
         Number7 number7 = new Number7();
 
         if(number3.divide(number)){
-            return number3.getValues(number);
+            return number3.getValues();
         }
         else if(number5.divide(number)){
-            return "buzz";
+            return number5.getValues();
         }
         else if(number7.divide(number)){
-            return "bang";
+            return number7.getValues();
         }
 
         return Integer.toString(number);

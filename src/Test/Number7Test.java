@@ -12,10 +12,7 @@ public class Number7Test extends TestCase {
     }
 
     public void test_number7_getValue_from_7_expected_bang(){
-        assertEquals("bang",number7.getValues(7));
+        assertEquals("bang",number7.getValues());
     }
 
-    public void test_number7_getValue_from_8_expected_8(){
-        assertEquals("8" , number7.getValues(8));
-    }
 }
