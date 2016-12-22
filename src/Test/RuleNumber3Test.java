@@ -1,10 +1,10 @@
 package Test;
 
-import NoUtil.SostitutionRuleNumber3;
+import NoUtil.RuleNumber3;
 import junit.framework.TestCase;
 
-public class SostitutionRuleNumber3Test extends TestCase {
-    SostitutionRuleNumber3 rule3 = new SostitutionRuleNumber3(); //TODO il nome va cambiato: regola
+public class RuleNumber3Test extends TestCase {
+    RuleNumber3 rule3 = new RuleNumber3();
 
     public void test_number3_divide_3() throws Exception {
         assertTrue(rule3.isSatisfyFor(3));

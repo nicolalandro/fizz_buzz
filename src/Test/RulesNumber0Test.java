@@ -1,10 +1,10 @@
 package Test;
 
-import NoUtil.SostitutionRuleNumber0;
+import NoUtil.RuleNumber0;
 import junit.framework.TestCase;
 
-public class SostitutionRulesNumber0Test extends TestCase {
-    SostitutionRuleNumber0 rule0 = new SostitutionRuleNumber0();
+public class RulesNumber0Test extends TestCase {
+    RuleNumber0 rule0 = new RuleNumber0();
 
     public void test_Number0_divide_0() throws Exception {
         assertTrue(rule0.isSatisfyFor(0));

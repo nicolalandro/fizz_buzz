@@ -4,8 +4,8 @@ package NoUtil;
 import java.util.ArrayList;
 
 public class FizzBuzz {
-    private  ArrayList<SostitutionRuleInterface> listOfRule;
-    public FizzBuzz(ArrayList<SostitutionRuleInterface> rules){  //TODO passare arraylist di regole
+    private  ArrayList<RuleInterface> listOfRule;
+    public FizzBuzz(ArrayList<RuleInterface> rules){  //TODO passare arraylist di regole
         this.listOfRule = rules;
 
 
@@ -19,7 +19,7 @@ public class FizzBuzz {
 
         //sto supponendo che dato un input una e una sola regola viene applicata, e si può stabilire una gerarchia di regole
 
-        for(SostitutionRuleInterface rule : listOfRule){ //la gerarchia di regole si applica nell'ordine degli elementi inseriti nella lista
+        for(RuleInterface rule : listOfRule){ //la gerarchia di regole si applica nell'ordine degli elementi inseriti nella lista
             if(rule.isSatisfyFor(number)){
                 return rule.getValue();
             }

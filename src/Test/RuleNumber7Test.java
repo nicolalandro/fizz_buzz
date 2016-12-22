@@ -1,11 +1,11 @@
 package Test;
 
-import NoUtil.SostitutionRuleNumber7;
+import NoUtil.RuleNumber7;
 import junit.framework.TestCase;
 
 
-public class SostitutionRuleNumber7Test extends TestCase {
-    SostitutionRuleNumber7 rule7 = new SostitutionRuleNumber7();
+public class RuleNumber7Test extends TestCase {
+    RuleNumber7 rule7 = new RuleNumber7();
     public void test_number7_divide_7() throws Exception {
         assertTrue(rule7.isSatisfyFor(7));
     }

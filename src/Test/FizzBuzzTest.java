@@ -2,7 +2,6 @@ package Test;
 
 import NoUtil.*;
 import junit.framework.TestCase;
-import org.junit.Test;
 
 import java.util.ArrayList;
 
@@ -11,17 +10,17 @@ import static org.junit.Assert.assertNotEquals;
 
 
 public class FizzBuzzTest extends TestCase {
-    ArrayList<SostitutionRuleInterface> rule ;
+    ArrayList<RuleInterface> rule ;
     FizzBuzz fizzBuzz;
 
     @Override
     public void setUp() throws Exception {
         super.setUp();
         rule = new ArrayList();
-        rule.add(new SostitutionRuleNumber0());
-        rule.add(new SostitutionRuleNumber3());
-        rule.add(new SostitutionRuleNumber5());
-        rule.add(new SostitutionRuleNumber7());
+        rule.add(new RuleNumber0());
+        rule.add(new RuleNumber3());
+        rule.add(new RuleNumber5());
+        rule.add(new RuleNumber7());
 
         fizzBuzz = new FizzBuzz(rule);
     }

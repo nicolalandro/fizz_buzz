@@ -1,10 +1,10 @@
 package Test;
 
-import NoUtil.SostitutionRuleNumber5;
+import NoUtil.RuleNumber5;
 import junit.framework.TestCase;
 
-public class SostitutionRulesNumber5Test extends TestCase{
-    SostitutionRuleNumber5 rule5 = new SostitutionRuleNumber5();
+public class RulesNumber5Test extends TestCase{
+    RuleNumber5 rule5 = new RuleNumber5();
 
     public void test_number5_divide_5() throws Exception {
         assertTrue(rule5.isSatisfyFor(5));

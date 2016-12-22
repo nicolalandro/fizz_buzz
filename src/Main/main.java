@@ -8,11 +8,11 @@ import java.util.ArrayList;
 public class main {
 
     public static void main (String args[]){
-        ArrayList<SostitutionRuleInterface> rule = new ArrayList();
-        rule.add(new SostitutionRuleNumber0());
-        rule.add(new SostitutionRuleNumber3());
-        rule.add(new SostitutionRuleNumber5());
-        rule.add(new SostitutionRuleNumber7());
+        ArrayList<RuleInterface> rule = new ArrayList();
+        rule.add(new RuleNumber0());
+        rule.add(new RuleNumber3());
+        rule.add(new RuleNumber5());
+        rule.add(new RuleNumber7());
 
         FizzBuzz fizzBuzz = new FizzBuzz(rule);
 
