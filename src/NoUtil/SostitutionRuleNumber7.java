@@ -2,7 +2,7 @@ package NoUtil;
 
 
 public class SostitutionRuleNumber7 implements SostitutionRuleInterface {
-    public boolean satisfyRule(int number) {
+    public boolean isSatisfyFor(int number) {
         return number%7==0;
     }
 
