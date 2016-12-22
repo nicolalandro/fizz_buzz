@@ -15,7 +15,7 @@ public class RuleNumber7Test extends TestCase {
     }
 
     public void test_number7_getValue_from_7_expected_bang(){
-        assertEquals("bang", rule7.getValue());
+        assertEquals("bang", rule7.apply());
     }
 
 }

@@ -16,7 +16,7 @@ public class RuleNumber3Test extends TestCase {
 
     public void test_number3_getValue_from_3_expected_fizz() throws Exception {
 
-        assertEquals("fizz" , rule3.getValue());
+        assertEquals("fizz" , rule3.apply());
     }
 
 }

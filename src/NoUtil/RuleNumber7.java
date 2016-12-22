@@ -6,7 +6,7 @@ public class RuleNumber7 implements RuleInterface {
         return number%7==0;
     }
 
-    public String getValue() {
+    public String apply() {
         return "bang";
     }
 }

@@ -5,10 +5,8 @@ import java.util.ArrayList;
 
 public class FizzBuzz {
     private  ArrayList<RuleInterface> listOfRule;
-    public FizzBuzz(ArrayList<RuleInterface> rules){  //TODO passare arraylist di regole
+    public FizzBuzz(ArrayList<RuleInterface> rules){
         this.listOfRule = rules;
-
-
     }
 
     public String getValue(int number) {
@@ -21,7 +19,7 @@ public class FizzBuzz {
 
         for(RuleInterface rule : listOfRule){ //la gerarchia di regole si applica nell'ordine degli elementi inseriti nella lista
             if(rule.isSatisfyFor(number)){
-                return rule.getValue();
+                return rule.apply();
             }
         }
 

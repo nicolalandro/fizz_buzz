@@ -15,7 +15,7 @@ public class RulesNumber5Test extends TestCase{
     }
 
     public void test_number5_getValue_from_5_expected_buzz() throws Exception {
-        assertEquals("buzz" , rule5.getValue());
+        assertEquals("buzz" , rule5.apply());
     }
 
 }

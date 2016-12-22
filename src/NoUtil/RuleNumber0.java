@@ -5,7 +5,7 @@ public class RuleNumber0 implements RuleInterface {
         return number==0;
     }
 
-    public String getValue() {
+    public String apply() {
         return "0";
     }
 }

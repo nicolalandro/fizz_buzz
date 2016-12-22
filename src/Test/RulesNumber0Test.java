@@ -10,6 +10,6 @@ public class RulesNumber0Test extends TestCase {
         assertTrue(rule0.isSatisfyFor(0));
     }
     public void test_Number0_getValue_expect_0(){
-        assertEquals("0", rule0.getValue());
+        assertEquals("0", rule0.apply());
     }
 }
