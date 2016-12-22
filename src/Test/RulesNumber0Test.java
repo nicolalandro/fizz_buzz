@@ -6,10 +6,10 @@ import junit.framework.TestCase;
 public class RulesNumber0Test extends TestCase {
     RuleNumber0 rule0 = new RuleNumber0();
 
-    public void test_Number0_divide_0() throws Exception {
+    public void test_RuleNumber0_isSatisfyFor_0() throws Exception {
         assertTrue(rule0.isSatisfyFor(0));
     }
-    public void test_Number0_getValue_expect_0(){
+    public void test_RuleNumber0_apply_expect_0(){
         assertEquals("0", rule0.apply());
     }
 }
