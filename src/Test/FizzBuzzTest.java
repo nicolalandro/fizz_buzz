@@ -17,6 +17,7 @@ public class FizzBuzzTest extends TestCase {
         super.setUp();
         ArrayList<RuleInterface> rule = new ArrayList();
         rule.add(new RuleNumber0());
+        rule.add(new RuleNumber15());
         rule.add(new RuleNumber3());
         rule.add(new RuleNumber5());
         rule.add(new RuleNumber7());
@@ -64,6 +65,10 @@ public class FizzBuzzTest extends TestCase {
 
     public void test_expected_bang_FromInput49()throws Exception{
         assertEquals("bang", fizzBuzz.getValue(49));
+    }
+
+    public void test_expected_fizzbuzz_FromInput15()throws Exception{
+        assertEquals("fizzbuzz", fizzBuzz.getValue(15));
     }
 
 }
