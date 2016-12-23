@@ -10,13 +10,12 @@ import static org.junit.Assert.assertNotEquals;
 
 
 public class FizzBuzzTest extends TestCase {
-    ArrayList<RuleInterface> rule ;
     FizzBuzz fizzBuzz;
 
     @Override
     public void setUp() throws Exception {
         super.setUp();
-        rule = new ArrayList();
+        ArrayList<RuleInterface> rule = new ArrayList();
         rule.add(new RuleNumber0());
         rule.add(new RuleNumber3());
         rule.add(new RuleNumber5());

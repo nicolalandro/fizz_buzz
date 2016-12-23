@@ -1,12 +1,8 @@
 package NoUtil;
 
 
-public class RuleNumber3 implements RuleInterface {
-    public boolean isSatisfyFor(int number) {
-        return number%3==0;
-    }
-
-    public String apply() {
-            return "fizz";
+public class RuleNumber3 extends RuleNumberDivideTargetNumber{
+    public RuleNumber3() {
+        super(3, "fizz");
     }
 }

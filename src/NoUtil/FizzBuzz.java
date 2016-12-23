@@ -11,10 +11,6 @@ public class FizzBuzz {
 
     public String getValue(int number) {
 
-
-        //TODO if(number==0) è un problema comune a tutti i numeri quindi per non duplicare il controllo converrebe farlo qui,
-        // però logicamente dovrebbe stare nel metodo isSatisfyFor
-
         //sto supponendo che dato un input una e una sola regola viene applicata, e si può stabilire una gerarchia di regole
 
         for(RuleInterface rule : listOfRule){ //la gerarchia di regole si applica nell'ordine degli elementi inseriti nella lista

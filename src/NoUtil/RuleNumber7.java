@@ -1,12 +1,9 @@
 package NoUtil;
 
 
-public class RuleNumber7 implements RuleInterface {
-    public boolean isSatisfyFor(int number) {
-        return number%7==0;
-    }
+public class RuleNumber7 extends  RuleNumberDivideTargetNumber {
 
-    public String apply() {
-        return "bang";
+    public RuleNumber7() {
+        super(7, "bang");
     }
 }
