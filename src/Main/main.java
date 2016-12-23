@@ -15,9 +15,9 @@ public class main {
         rule.add(new RuleNumber5());
         rule.add(new RuleNumber7());
 
-        FizzBuzz fizzBuzz = new FizzBuzz(rule);
+        FizzBuzz fizzBuzz = new FizzBuzz(rule); //(GRASP creator)
 
-        for(int i=1;i<=100;i++){
+        for(int i=1;i<=100;i++){ //SOLID SRP
             System.out.println(fizzBuzz.getValue(i));
         }
     }
