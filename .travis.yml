@@ -6,6 +6,8 @@ jdk:
 os:
   - linux
 
+sudo: false # faster builds
+
 branches:
   only:
     - master
