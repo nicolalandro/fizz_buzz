@@ -6,16 +6,7 @@ jdk:
 os:
   - linux
 
-machine:
-  environment:
-    CC_TEST_REPORTER_ID: 59ac560b1338f486042272b20803b8920f68670dcc74cf4066eafc82e1c830df
-
-dependencies:
-  post:
-    - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-    - chmod +x ./cc-test-reporter
-
-sudo: true
+sudo: false
 
 branches:
   only:
@@ -28,9 +19,3 @@ cache:
 after_success:
   - cat codecov.yml | curl --data-binary @- https://codecov.io/validate
   - bash <(curl -s https://codecov.io/bash)
-
-test:
-  pre:
-    - ./cc-test-reporter before-build
-  post:
-    - ./cc-test-reporter after-build --exit-code $EXIT_CODE
