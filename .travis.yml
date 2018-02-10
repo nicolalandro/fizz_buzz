@@ -8,7 +8,7 @@ os:
 
 machine:
   environment:
-    CC_TEST_REPORTER_ID: ABC123
+    CC_TEST_REPORTER_ID: 59ac560b1338f486042272b20803b8920f68670dcc74cf4066eafc82e1c830df
 
 dependencies:
   post:
