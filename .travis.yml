@@ -3,12 +3,13 @@ language: java
 jdk:
   - oraclejdk8
 
-after_success:
-  - cat codecov.yml | curl --data-binary @- https://codecov.io/validate
-  - bash <(curl -s https://codecov.io/bash)
-
 os:
   - linux
+
+dependencies:
+  post:
+    - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+    - chmod +x ./cc-test-reporter
 
 sudo: false # faster builds
 
@@ -19,3 +20,13 @@ branches:
 cache:
   directories:
   - $HOME/.gradle
+
+after_success:
+  - cat codecov.yml | curl --data-binary @- https://codecov.io/validate
+  - bash <(curl -s https://codecov.io/bash)
+
+test:
+  pre:
+    - ./cc-test-reporter before-build
+  post:
+    - ./cc-test-reporter after-build --exit-code $EXIT_CODE
