@@ -2,3 +2,4 @@
 [![codecov](https://codecov.io/gh/nicolalandro/fizz_buzz/branch/master/graph/badge.svg)](https://codecov.io/gh/nicolalandro/fizz_buzz)
 [![Dependency Status](https://www.versioneye.com/user/projects/5a7efc470fb24f33b0fcc301/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5a7efc470fb24f33b0fcc301)
 [![Maintainability](https://api.codeclimate.com/v1/badges/1af6998cc07fc376b135/maintainability)](https://codeclimate.com/github/nicolalandro/fizz_buzz/maintainability)
+[![GitHub issues](https://img.shields.io/github/issues/nicolalandro/fizz_buzz.svg)](https://github.com/nicolalandro/fizz_buzz/issues)
